@@ -21,7 +21,8 @@ namespace FictionSnippets
             //Fibonancci logic
             Fibonacci myFibo= new Fibonacci();
             // myFibo.IsFiboWithIteration(10);
-             myFibo.IsFiboWithRecursionMain(10);
+            // myFibo.IsFiboWithRecursionMain(10);
+            myFibo.IsFiboOneLinerLinq(10);
         }
     }
 }

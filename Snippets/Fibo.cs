@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Collections.Generic;
 using FictionSnippets.Interfaces;
 
 namespace FictionSnippets.Snippets
@@ -46,6 +48,20 @@ namespace FictionSnippets.Snippets
             Console.WriteLine(prev);
            return IsFiboWithRecursion(n - 1, val + prev, val);
         }
+
+        
+        //using linq expression one liner.       
+        public void IsFiboOneLinerLinq(int n)
+        {
+            List<int> myFibo = new List<int>();
+            Enumerable.Range(0,n).ToList().ForEach(x=>  myFibo.Add(x<=1 ?x : myFibo[x-1]+ myFibo[x-2]));
+
+            foreach (var item in myFibo)
+            {
+                Console.WriteLine(item);
+            }
+        }
+     
 
     }
 }

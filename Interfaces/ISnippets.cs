@@ -14,6 +14,7 @@ namespace FictionSnippets.Interfaces
        public void IsFiboWithIteration(int number);
         public int IsFiboWithRecursion(int n, int val, int prev);
         public void IsFiboWithRecursionMain(int n);
+        public void IsFiboOneLinerLinq(int n);
     }
 
 }
