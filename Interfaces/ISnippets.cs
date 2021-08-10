@@ -25,5 +25,12 @@ namespace FictionSnippets.Interfaces
         public void FindFactorialOneLinerLinq(int n);
     }
 
+      public interface IPrime
+    {
+       public void IsPrimeWithIteration(int number);
+        public int  IsPrimeWithRecursion(int n,int i);
+        public void  IsPrimeWithRecursionMain(int n);
+        public void  IsPrimeOneLinerLinq(int n);
+    }
 
 }

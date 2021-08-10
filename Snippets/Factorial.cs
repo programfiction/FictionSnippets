@@ -20,9 +20,9 @@ namespace FictionSnippets.Snippets
 
         //using linq
         public void FindFactorialOneLinerLinq(int n)
-        {   
-            
-            Console.WriteLine(Enumerable.Range(1,n).Aggregate((f,s)=>f*s));
+        {
+            Console
+                .WriteLine(Enumerable.Range(1, n).Aggregate((f, s) => f * s));
         }
 
         //using recursion
