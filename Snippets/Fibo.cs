@@ -9,7 +9,7 @@ namespace FictionSnippets.Snippets
    public class Fibonacci : IFibonacci
     {
         //Mehtod is simple n Fast in performance single loop with O(N) performance
-        public void IsFiboWithIteration(int number)
+        public void FindFiboWithIteration(int number)
         {
             if (number == 0)
             {
@@ -29,13 +29,13 @@ namespace FictionSnippets.Snippets
           
         }
 
-        public void IsFiboWithRecursionMain(int n)
+        public void FindFiboWithRecursionMain(int n)
         {
-            Console.WriteLine(IsFiboWithRecursion(10,1,0));
+            Console.WriteLine(FindFiboWithRecursion(10,1,0));
         }
      
         //Mehtod is to find fibonacci with recursion n Fast and O(N) performance
-        public  int IsFiboWithRecursion(int n, int val, int prev)
+        public  int FindFiboWithRecursion(int n, int val, int prev)
         {
             if (n == 0)
             {
@@ -46,12 +46,12 @@ namespace FictionSnippets.Snippets
                 return val;
             }
             Console.WriteLine(prev);
-           return IsFiboWithRecursion(n - 1, val + prev, val);
+           return FindFiboWithRecursion(n - 1, val + prev, val);
         }
 
         
         //using linq expression one liner.       
-        public void IsFiboOneLinerLinq(int n)
+        public void FindFiboOneLinerLinq(int n)
         {
             List<int> myFibo = new List<int>();
             Enumerable.Range(0,n).ToList().ForEach(x=>  myFibo.Add(x<=1 ?x : myFibo[x-1]+ myFibo[x-2]));

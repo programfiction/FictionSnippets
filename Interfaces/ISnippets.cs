@@ -11,10 +11,19 @@ namespace FictionSnippets.Interfaces
 
   public interface IFibonacci
     {
-       public void IsFiboWithIteration(int number);
-        public int IsFiboWithRecursion(int n, int val, int prev);
-        public void IsFiboWithRecursionMain(int n);
-        public void IsFiboOneLinerLinq(int n);
+       public void FindFiboWithIteration(int number);
+        public int FindFiboWithRecursion(int n, int val, int prev);
+        public void FindFiboWithRecursionMain(int n);
+        public void FindFiboOneLinerLinq(int n);
     }
+
+      public interface IFactorial
+    {
+       public void FindFactorialWithIteration(int number);
+        public int FindFactorialWithRecursion(int n);
+        public void FindFactorialWithRecursionMain(int n);
+        public void FindFactorialOneLinerLinq(int n);
+    }
+
 
 }
