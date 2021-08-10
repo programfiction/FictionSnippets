@@ -1,4 +1,4 @@
-# FictionSnippets-
+# FictionSnippets
 Datastructure and Interview Questions
 ***
 
