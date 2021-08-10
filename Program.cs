@@ -1,10 +1,10 @@
 ﻿using System;
 using  FictionSnippets.Snippets;
-namespace TEST1
+namespace FictionSnippets
 {
-    class Program
+    class ProgramFiction
     {
-        protected Program()
+        protected ProgramFiction()
         {
 
         }
@@ -17,7 +17,11 @@ namespace TEST1
             Anagram myAnagramObj= new Anagram();
             // myAnagramObj.IsAnagram("AKA","AAK");
             // myAnagramObj.IsAnagramInShort("abcd","dcba");
-            myAnagramObj.IsAnagramOptimal("abcd","dcba");
+            // myAnagramObj.IsAnagramOptimal("abcd","dcba");
+            //Fibonancci logic
+            Fibonacci myFibo= new Fibonacci();
+            // myFibo.IsFiboWithIteration(10);
+             myFibo.IsFiboWithRecursionMain(10);
         }
     }
 }
