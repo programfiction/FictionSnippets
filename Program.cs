@@ -34,11 +34,14 @@ namespace FictionSnippets
             // myFact.FindFactorialWithRecursionMain(5);
             // myFact.FindFactorialOneLinerLinq(6);
 
-            //Primenumber
-            PrimeNumber myPrime= new PrimeNumber();
-            myPrime.IsPrimeOneLinerLinq(13);
-            myPrime.IsPrimeWithRecursionMain(9);
-            myPrime.IsPrimeWithIteration(144);
+            // //Primenumber
+            // PrimeNumber myPrime= new PrimeNumber();
+            // myPrime.IsPrimeOneLinerLinq(13);
+            // myPrime.IsPrimeWithRecursionMain(9);
+            // myPrime.IsPrimeWithIteration(144);
+            //Shortest path algorithem
+           ShortestPathAlgo myShortestPath= new  ShortestPathAlgo();
+           myShortestPath.FindShortestPathWithDijkstra();
         }
     }
 }
