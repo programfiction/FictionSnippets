@@ -33,4 +33,10 @@ namespace FictionSnippets.Interfaces
         public void  IsPrimeOneLinerLinq(int n);
     }
 
+    public interface IShortestpath
+    {
+    public void FindShortestPathWithDijkstra();
+    public  void PrintShortestPath(int[] dist, int n,int destination);
+    public  int FindMinimumDistance(int[] dist,bool[] sptSet);
+    }
 }
