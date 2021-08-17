@@ -14,7 +14,7 @@ Datastructure and Interview Questions
 ### Q: Shortest Path Algorithm Graph
 ![Profile](https://github.com/programfiction/FictionSnippets/blob/main/Assets/GraphDiagram.jpg)
 
-- Find shortest path between source and destination check `line number 54` in code [Shortest Path Algorithm](https://github.com/programfiction/FictionSnippets/blob/main/Snippets/ShortestPathAlgo.cs) using Dijkstra’s algorithm.
+- Find shortest path between source and destination check `line number 35` in code [Shortest Path Algorithm](https://github.com/programfiction/FictionSnippets/blob/main/Snippets/ShortestPathAlgo.cs) using Dijkstra’s algorithm.
 
  ---
 
