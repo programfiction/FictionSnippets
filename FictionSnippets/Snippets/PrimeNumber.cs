@@ -19,20 +19,20 @@ namespace FictionSnippets.Snippets
         }
 
         //prime number with iteration
-        public void IsPrimeWithIteration(int n)
+        public void IsPrimeWithIteration(int num)
         {
             int flag = 0;
-            int m = n / 2;
+            int m = num / 2;
             for (int i = 2; i <= m; i++)
             {
-                if (n % i == 0)
+                if (num % i == 0)
                 {
                     flag = 1;
                     break;
                 }
             }
 
-            Console.WriteLine(n + " is Prime? Answer-" + (flag == 0));
+            Console.WriteLine(num + " is Prime? Answer-" + (flag == 0));
         }
 
         //Prime number using recursion

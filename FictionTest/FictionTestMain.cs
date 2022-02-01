@@ -9,11 +9,15 @@ namespace FictionTest
         private Factorial fact;
         private QuickSort qsort;
         private MyStack stack;
+        private MyQueue q;
+        private LinkedList myll;
         public FictionTestmain()
         {
             fact = new Factorial();
             qsort = new QuickSort();
             stack = new MyStack();
+            q = new MyQueue();
+            myll= new LinkedList();
         }
 
         [Fact]
@@ -39,6 +43,24 @@ namespace FictionTest
             Assert.Equal(1, stack.Size());
 
         }
+        [Fact]
+        public void QueueTest()
+        {
+            q.Enqueue(1);
+            q.Enqueue(2);
+            q.Dequeue();
+            var result = q.Peek();
+            Assert.Equal(2, result);
+            Assert.Equal(1, q.Size());
 
+        }
+        [Fact]
+        public void LinkedListTest()
+        {
+            myll.InsertNext(5);
+            var result= myll.Traverse(myll);
+            Assert.Equal(5, result[1]);
+
+        }
     }
 }

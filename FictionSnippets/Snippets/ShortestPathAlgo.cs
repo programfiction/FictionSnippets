@@ -14,11 +14,11 @@ namespace FictionSnippets.Snippets
                 min_index = -1;
 
             for (int v = 0; v < V; v++)
-            if (shortestPathSet[v] == false && dist[v] <= min)
-            {
-                min = dist[v];
-                min_index = v;
-            }
+                if (shortestPathSet[v] == false && dist[v] <= min)
+                {
+                    min = dist[v];
+                    min_index = v;
+                }
 
             return min_index;
         }
@@ -27,7 +27,7 @@ namespace FictionSnippets.Snippets
         {
             Console.Write("Vertex     Distance " + "from Source\n");
             for (int i = 0; i < V; i++)
-            if (i == destination) Console.Write(i + " \t\t " + dist[i] + "\n");
+                if (i == destination) Console.Write(i + " \t\t " + dist[i] + "\n");
         }
 
         public void FindShortestPathWithDijkstra()
@@ -64,14 +64,16 @@ namespace FictionSnippets.Snippets
                 int u = FindMinimumDistance(dist, shortestPathSet);
                 shortestPathSet[u] = true;
                 for (int v = 0; v < V; v++)
-                if (
-                    !shortestPathSet[v] &&
-                    graph[u, v] != 0 &&
-                    dist[u] != int.MaxValue &&
-                    dist[u] + graph[u, v] < dist[v]
-                ) dist[v] = dist[u] + graph[u, v];
+                {
+                    if (
+                        !shortestPathSet[v] &&
+                        graph[u, v] != 0 &&
+                        dist[u] != int.MaxValue &&
+                        dist[u] + graph[u, v] < dist[v]
+                    ) dist[v] = dist[u] + graph[u, v];
+                }
             }
-            PrintShortestPath (dist, V, destination);
+            PrintShortestPath(dist, V, destination);
         }
     }
 }
