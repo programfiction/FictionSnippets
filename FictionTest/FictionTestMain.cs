@@ -60,6 +60,9 @@ namespace FictionTest
             myll.InsertNext(5);
             var result= myll.Traverse(myll);
             Assert.Equal(5, result[1]);
+            myll.Reverse(myll);
+            result= myll.Traverse(myll);
+            Assert.Equal(5, result[0]);
 
         }
     }

@@ -8,8 +8,7 @@ namespace FictionSnippets.Snippets
         private LinkedList next;
         public LinkedList()
         {
-            data = 0;
-            next = null;
+            
         }
         public LinkedList(int valx)
         {
@@ -29,7 +28,7 @@ namespace FictionSnippets.Snippets
             {
                 LinkedList temp = this.next;
                 node.next = temp;
-                this.next = node.next;
+                this.next = node;
             }
 
             return node;
@@ -46,17 +45,43 @@ namespace FictionSnippets.Snippets
             node = null;
             return 1;
         }
+
+        public LinkedList Reverse(LinkedList node)
+        {
+            if(node== null || node.next==null)
+            return node;
+
+            LinkedList rest= Reverse(node.next);
+            node.next.next=node;
+            node.next=null;
+            return rest;
+
+        }
+        public void Reverse()
+        {
+            LinkedList previous=null,current= this.next, next=null;
+            while (current!=null)
+            {
+                next=current.next;
+                current.next=previous;
+                previous=current;
+                current=next;
+            }
+            this.next=previous;
+           
+
+        }
         public List<int> Traverse(LinkedList node)
         {
-            List<int> myList= new List<int>();
-            if(node==null)
+            List<int> myList = new List<int>();
+            if (node == null)
             {
-                node=this;
+                node = this;
             }
-            while (node!=null)
+            while (node != null)
             {
-               myList.Add(node.data);
-                node= node.next;
+                myList.Add(node.data);
+                node = node.next;
             }
 
             return myList;

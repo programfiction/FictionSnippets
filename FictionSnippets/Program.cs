@@ -16,9 +16,25 @@ namespace FictionSnippets
             // myShortestPath.FindShortestPathWithDijkstra();
 
             // QuickSort myObj= new QuickSort();
-            LinkedList myll= new LinkedList(5);
-             myll.InsertNext(6);
-            var result= myll.Traverse(myll);
+            LinkedList myll = new LinkedList();
+            myll.InsertNext(6);
+            myll.InsertNext(7);
+            myll.InsertNext(8);
+            var result = myll.Traverse(myll);
+            for (int i = 0; i < result.Count; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+            Console.WriteLine("After Reverse");
+            myll.Reverse();
+            result = myll.Traverse(myll);
+            for (int i = 0; i < result.Count; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+            Console.WriteLine("After Reverse");
+            myll = myll.Reverse(myll);
+            result = myll.Traverse(myll);
             for (int i = 0; i < result.Count; i++)
             {
                 Console.WriteLine(result[i]);

@@ -11,6 +11,8 @@ Datastructure and Interview Questions
   | Shortest Path Algorithm |[Shortest Path Algorithm](https://github.com/programfiction/FictionSnippets/blob/main/FictionSnippets/Snippets/ShortestPathAlgo.cs) solution using iteration line no#33 |
   |Quick Sort solution | [QuickSort](https://github.com/programfiction/FictionSnippets/blob/main/FictionSnippets/Snippets/QuickSort.cs) program with unit testing  (in FictiontTest project)  |
   |Stack  | [Stack implementation](https://github.com/programfiction/FictionSnippets/blob/main/FictionSnippets/Snippets/MyStack.cs) using two Queues with unit testing (in FictiontTest project)  |
+  |Queue  | [Queue implementation](https://github.com/programfiction/FictionSnippets/blob/main/FictionSnippets/Snippets/MyQueue.cs) using two Stacks with unit testing (in FictiontTest project)  |
+  |Linked List  | [LinkedList implementation](https://github.com/programfiction/FictionSnippets/blob/main/FictionSnippets/Snippets/LinkedList.cs) having linked list traverse and reverse program with unit testing (in FictiontTest project)  |
  ---
 
 ### Q: Shortest Path Algorithm Graph
